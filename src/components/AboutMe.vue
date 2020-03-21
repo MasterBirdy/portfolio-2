@@ -18,13 +18,17 @@
 export default {};
 </script>
 <style scoped>
+.text {
+    margin-bottom: 1.5rem;
+}
+
 #aboutMe {
     margin-top: 5rem;
     max-width: 500px;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.32rem;
     color: #3a6dcccc;
 }
 

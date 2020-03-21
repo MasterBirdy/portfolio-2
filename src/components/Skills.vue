@@ -65,11 +65,11 @@ export default {
 </script>
 <style scoped>
 #skills {
-    margin-top: 5rem;
+    margin-top: 4.75rem;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.32rem;
     color: #3a6dcccc;
 }
 .skill-grid {

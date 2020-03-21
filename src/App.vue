@@ -32,6 +32,5 @@ body {
     font-size: 1rem;
     margin-top: 0.5rem;
     line-height: 1.44;
-    margin-bottom: 1.5rem;
 }
 </style>
