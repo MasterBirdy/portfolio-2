@@ -1,26 +1,44 @@
 <template>
     <nav>
         <ul>
-            <li>
-                <a href="#aboutMe">About Me</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            <li>
-                <p>Resume</p>
+            <li v-for="link in links" :key="link.text">
+                <a :href="link.link">{{ link.text }}</a>
             </li>
         </ul>
+        <div class="hamburger"></div>
     </nav>
 </template>
 
-<script></script>
+<script>
+export default {
+    data() {
+        return {
+            links: [
+                {
+                    text: "About Me",
+                    link: "#aboutMe"
+                },
+                {
+                    text: "Skills",
+                    link: "#skills"
+                },
+                {
+                    text: "Projects",
+                    link: "#projects"
+                },
+                {
+                    text: "Contact",
+                    link: "#contact"
+                },
+                {
+                    text: "Resume",
+                    link: "#resume"
+                }
+            ]
+        };
+    }
+};
+</script>
 <style scoped>
 nav {
     display: flex;
@@ -70,5 +88,48 @@ a::after {
 a:hover::after,
 a:active::after {
     width: 100%;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: rgba(25, 17, 92, 0.664);
+    border-radius: 10px;
+    right: 18px;
+    top: 36px;
+}
+
+.hamburger::before {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    content: "";
+    background-color: rgba(25, 17, 92, 0.664);
+    border-radius: 5px;
+    right: 0;
+    top: -8px;
+}
+
+.hamburger::after {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    content: "";
+    background-color: rgba(25, 17, 92, 0.664);
+    border-radius: 10px;
+    right: 0;
+    bottom: -8px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
 }
 </style>

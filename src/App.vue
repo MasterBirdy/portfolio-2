@@ -23,7 +23,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fdfdfd;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 #app {
@@ -37,5 +37,13 @@ body {
     font-size: 1rem;
     margin-top: 0.5rem;
     line-height: 1.44;
+}
+
+@media (max-width: 768px) {
+    #app {
+        margin-top: 1.25rem;
+        padding: 0;
+        width: 90%;
+    }
 }
 </style>

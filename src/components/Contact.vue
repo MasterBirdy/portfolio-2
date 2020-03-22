@@ -12,7 +12,7 @@
             <label for="email">Email</label>
             <input type="text" id="email" name="email" />
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" cols="45" />
+            <textarea id="message" name="message" rows="4" />
             <button type="submit" form="form" value="Submit">Submit</button>
         </form>
     </div>
@@ -40,6 +40,10 @@ textarea {
     font-family: "Ubuntu", sans-serif;
 }
 
+textarea {
+    width: 62%;
+}
+
 label {
     display: block;
     margin-bottom: 0.25rem;
@@ -60,5 +64,10 @@ button {
     font-size: 0.9rem;
     border: 1px solid rgb(170, 170, 170);
     font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    color: rgba(25, 17, 92, 0.795);
+    text-decoration: none;
 }
 </style>

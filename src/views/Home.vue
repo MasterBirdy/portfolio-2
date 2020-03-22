@@ -41,4 +41,10 @@ export default {
 p {
     font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+    .nav-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
 </style>

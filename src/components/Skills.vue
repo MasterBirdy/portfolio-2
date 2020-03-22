@@ -2,13 +2,17 @@
     <div id="skills">
         <h2>Skills</h2>
         <div class="skill-grid">
-            <svg
-                viewBox="0 0 128 128"
+            <div
+                class="skill-item"
                 v-for="(skill, index) in skills"
                 :key="index"
-                :width="booleanTest ? '300px' : '105px'"
-                v-html="skill.innerHtml"
-            ></svg>
+            >
+                <svg
+                    viewBox="0 0 128 128"
+                    :width="mobileSize ? '60px' : '105px'"
+                    v-html="skill.innerHtml"
+                ></svg>
+            </div>
         </div>
     </div>
 </template>
@@ -60,6 +64,11 @@ export default {
             ],
             booleanTest: false
         };
+    },
+    computed: {
+        mobileSize() {
+            return window.innerWidth <= 768;
+        }
     }
 };
 </script>
@@ -77,6 +86,28 @@ h2 {
     margin-top: 1.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
     grid-row-gap: 4rem;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+svg {
+    height: 100%;
+    max-height: 105px;
+}
+
+@media (max-width: 768px) {
+    .skill-grid {
+        margin-top: 0.75rem;
+    }
+    .skill-item {
+        justify-content: center;
+        align-content: center;
+    }
 }
 </style>

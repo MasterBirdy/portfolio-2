@@ -58,11 +58,12 @@ a {
 }
 
 a:hover,
-a:visited {
+a:active {
     color: rgba(83, 83, 83, 0.596);
 }
 
-a::after {
+a::after,
+a:active::after {
     position: absolute;
     content: "";
     bottom: -3px;
@@ -75,8 +76,7 @@ a::after {
     transition: all 0.875s ease-in-out;
 }
 
-a:hover::after,
-a:visited::after {
+a:hover::after {
     width: 0%;
 }
 
@@ -104,5 +104,15 @@ a.source::after {
 i {
     font-size: 2.5rem;
     margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .background-picture {
+        display: none;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
 }
 </style>
