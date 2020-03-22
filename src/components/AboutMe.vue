@@ -4,9 +4,9 @@
         <p class="text">
             Hi, I'm Matthew! I'm a full stack web developer. I love creating
             beautiful websites with the newest technology and modern frameworks
-            and languages including <span class="bold">JavaScript</span>,
+            and languages including <span class="bold3">NodeJS</span>,
             <span class="bold2">Vue</span>, and
-            <span class="bold3">NodeJS</span>.
+            <span class="bold">JavaScript</span>.
         </p>
         <p class="text">
             When I'm not programming, I enjoy playing computer games, running,
@@ -32,8 +32,8 @@ h2 {
     color: #3a6dcccc;
 }
 
-.bold {
-    color: rgba(25, 17, 92, 0.767);
+.bold3 {
+    color: rgba(96, 163, 15, 0.808);
     font-weight: 600;
 }
 
@@ -42,8 +42,8 @@ h2 {
     font-weight: 600;
 }
 
-.bold3 {
-    color: rgba(248, 162, 2, 0.808);
+.bold {
+    color: rgba(202, 139, 21, 0.808);
     font-weight: 600;
 }
 </style>
