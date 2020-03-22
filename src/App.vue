@@ -14,11 +14,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Ubuntu, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fdfdfd;
+    padding-bottom: 1rem;
 }
 
 #app {

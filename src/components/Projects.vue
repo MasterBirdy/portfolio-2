@@ -55,7 +55,22 @@ export default {
                     demoLink: "https://objective-dijkstra-75b79d.netlify.com/",
                     githubLink: "https://github.com/MasterBirdy/crispy-eureka",
                     description:
-                        "A Vue application powered by Netlify CMS that lets users write blogs about their favorite feline companions."
+                        "A Vue application powered by Netlify CMS that lets users write blog posts about their favorite feline companions."
+                },
+                {
+                    name: "Country Viewer",
+                    subtitle: "REST API Country List",
+                    icons: [
+                        "devicon-html5-plain",
+                        "devicon-css3-plain",
+                        "devicon-javascript-plain",
+                        "devicon-vuejs-plain"
+                    ],
+                    image: "rest-countries-resized.jpg",
+                    demoLink: "https://awesome-colden-14cbac.netlify.com/",
+                    githubLink: "https://github.com/MasterBirdy/rest-countries",
+                    description:
+                        "Front end challenge by Frontend Mentor to replicate UI design specifications and make a country data viewer using a REST API."
                 }
             ]
         };
@@ -67,7 +82,8 @@ export default {
 </script>
 <style scoped>
 #projects {
-    margin-top: 4.75rem;
+    padding-top: 1rem;
+    margin-top: 3.75rem;
 }
 
 h2 {
@@ -76,11 +92,11 @@ h2 {
 }
 
 .project-grid {
-    margin-top: 0.8rem;
+    margin-top: 0.65rem;
     padding: 0 0.5rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 2.25rem;
+    grid-row-gap: 2.5rem;
 }
 
 .button-grid {

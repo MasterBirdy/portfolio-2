@@ -23,7 +23,8 @@ export default {};
 }
 
 #aboutMe {
-    margin-top: 5rem;
+    margin-top: 4rem;
+    padding-top: 1rem;
     max-width: 500px;
 }
 

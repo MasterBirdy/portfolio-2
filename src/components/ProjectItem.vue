@@ -14,8 +14,8 @@
                 {{ description }}
             </p>
             <div class="links">
-                <a :href="demoLink">Demo</a>
-                <a :href="githubLink" class="source">GitHub</a>
+                <a :href="demoLink" target="_blank">Demo</a>
+                <a :href="githubLink" class="source" target="_blank">GitHub</a>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@ export default {
 }
 
 h3 {
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     color: #4d538a;
 }
 
@@ -54,6 +54,12 @@ a {
     color: rgba(83, 83, 83, 0.808);
     text-decoration: none;
     margin-right: 0.85rem;
+    transition: all 1s ease-in-out;
+}
+
+a:hover,
+a:visited {
+    color: rgba(83, 83, 83, 0.596);
 }
 
 a::after {
@@ -66,6 +72,12 @@ a::after {
     border-color: rgba(66, 152, 151, 0.63);
     border-style: dashed;
     border-width: 0 0 2px 0;
+    transition: all 0.875s ease-in-out;
+}
+
+a:hover::after,
+a:visited::after {
+    width: 0%;
 }
 
 a.source::after {

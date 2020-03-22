@@ -65,7 +65,8 @@ export default {
 </script>
 <style scoped>
 #skills {
-    margin-top: 4.75rem;
+    margin-top: 3.75rem;
+    padding-top: 1rem;
 }
 
 h2 {
