@@ -87,7 +87,8 @@ export default {
 }
 
 h2 {
-    font-size: 1.32rem;
+    text-transform: lowercase;
+    font-size: 1.35rem;
     color: #3a6dcccc;
 }
 
@@ -102,5 +103,11 @@ h2 {
 .button-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.32rem;
+    }
 }
 </style>

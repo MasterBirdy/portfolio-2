@@ -28,20 +28,19 @@ body {
 
 #app {
     max-width: 900px;
-    margin: 2rem auto 0;
+    margin: 0 auto 0;
     padding: 0 20px;
 }
 
 .text {
     color: rgb(24, 24, 24);
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     line-height: 1.44;
 }
 
 @media (max-width: 768px) {
     #app {
-        margin-top: 1.25rem;
         padding: 0;
         width: 90%;
     }

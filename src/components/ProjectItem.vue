@@ -35,26 +35,29 @@ export default {
 </script>
 <style scoped>
 .item {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 1rem;
     box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.15);
     background-color: #fbfbfb;
 }
 
 h3 {
     margin-top: 0.5rem;
+    font-size: 1.25rem;
     color: #4d538a;
+    text-transform: lowercase;
 }
 
 .links {
-    margin-top: 0.5rem;
+    margin-top: 0.45rem;
 }
 
 a {
     position: relative;
     color: rgba(83, 83, 83, 0.808);
     text-decoration: none;
-    margin-right: 0.85rem;
+    margin-right: 1rem;
     transition: all 1s ease-in-out;
+    text-transform: lowercase;
 }
 
 a:hover,
@@ -66,7 +69,7 @@ a::after,
 a:active::after {
     position: absolute;
     content: "";
-    bottom: -3px;
+    bottom: -4px;
     left: 0;
     height: 1px;
     width: 100%;
@@ -80,15 +83,20 @@ a:hover::after {
     width: 0%;
 }
 
+.text {
+    margin-top: 0.5rem;
+}
+
 a.source::after {
     border-color: rgba(249, 149, 56, 0.623);
 }
 
 .subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #4d5b8ad3;
     letter-spacing: 1px;
     margin-bottom: 0.75rem;
+    text-transform: lowercase;
 }
 
 .info {
@@ -112,6 +120,7 @@ i {
     }
 
     h3 {
+        font-size: 1.2rem;
         margin-top: 0;
     }
 }

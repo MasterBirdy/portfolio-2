@@ -79,11 +79,13 @@ export default {
 }
 
 h2 {
-    font-size: 1.32rem;
+    font-size: 1.35rem;
     color: #3a6dcccc;
+    text-transform: lowercase;
+    letter-spacing: 1px;
 }
 .skill-grid {
-    margin-top: 1.2rem;
+    margin-top: 1.1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 1rem;
@@ -108,6 +110,9 @@ svg {
     .skill-item {
         justify-content: center;
         align-content: center;
+    }
+    h2 {
+        font-size: 1.32rem;
     }
 }
 </style>

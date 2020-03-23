@@ -29,8 +29,10 @@ export default {};
 }
 
 h2 {
-    font-size: 1.32rem;
+    font-size: 1.35rem;
     color: #3a6dcccc;
+    text-transform: lowercase;
+    letter-spacing: 1px;
 }
 
 .bold3 {
@@ -46,5 +48,11 @@ h2 {
 .bold {
     color: rgba(202, 139, 21, 0.808);
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.32rem;
+    }
 }
 </style>
