@@ -6,7 +6,7 @@
             <a href="mailto:hello@mattito.dev">hello@mattito.dev</a> or to send
             a message with the form below! Thanks for coming by! 👋
         </p>
-        <form id="form" name="form" netlify>
+        <form id="form" name="form" method="POST" data-netlify="true">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" />
             <label for="email">Email</label>
