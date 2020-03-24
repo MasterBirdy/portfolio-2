@@ -37,7 +37,7 @@ export default {
                         "devicon-vuejs-plain"
                     ],
                     image: "kaobook-resized.jpg",
-                    demoLink: "http://138.68.2.3/",
+                    demoLink: "http://www.kaobook.club",
                     githubLink: "https://github.com/MasterBirdy/kaobook-server",
                     description:
                         "A full stack web application with social login and timelines to let you write posts and comments on your friends' pages."
