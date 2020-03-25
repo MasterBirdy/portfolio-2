@@ -41,7 +41,7 @@ export default {
                 {
                     text: "Resume",
                     link:
-                        "https://documents-masterbirdy.s3-us-west-1.amazonaws.com/resume.pdf"
+                        "https://documents-masterbirdy.s3-us-west-1.amazonaws.com/resume-matthew.pdf"
                 }
             ]
         };
