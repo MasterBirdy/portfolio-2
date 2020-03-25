@@ -12,6 +12,7 @@
                 :demoLink="project.demoLink"
                 :githubLink="project.githubLink"
                 :description="project.description"
+                :imageLink="project.imageLink"
             ></ProjectItem>
         </div>
         <div class="button-grid">
@@ -39,6 +40,8 @@ export default {
                     image: "kaobook-resized.jpg",
                     demoLink: "http://www.kaobook.club",
                     githubLink: "https://github.com/MasterBirdy/kaobook-server",
+                    imageLink:
+                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/kaobook-compressed.jpg",
                     description:
                         "A full stack web application with social login and timelines to let you write posts and comments on your friends' pages."
                 },
@@ -54,6 +57,8 @@ export default {
                     image: "catblog-resized.jpg",
                     demoLink: "https://objective-dijkstra-75b79d.netlify.com/",
                     githubLink: "https://github.com/MasterBirdy/crispy-eureka",
+                    imageLink:
+                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/catblog-compressed.jpg",
                     description:
                         "A Vue application powered by Netlify CMS that lets users write blog posts about their favorite feline companions."
                 },
@@ -69,8 +74,26 @@ export default {
                     image: "rest-countries-resized.jpg",
                     demoLink: "https://awesome-colden-14cbac.netlify.com/",
                     githubLink: "https://github.com/MasterBirdy/rest-countries",
+                    imageLink:
+                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/rest-countries-compressed.png",
                     description:
                         "Front end challenge by Frontend Mentor to replicate UI design specifications and make a country data viewer using a REST API."
+                },
+                {
+                    name: "Weather App",
+                    subtitle: "Weather API App",
+                    icons: [
+                        "devicon-html5-plain",
+                        "devicon-css3-plain",
+                        "devicon-javascript-plain"
+                    ],
+                    image: "weather-resized.jpg",
+                    demoLink: "https://peaceful-saha-d013fd.netlify.com/",
+                    githubLink: "https://github.com/MasterBirdy/weatherapp",
+                    imageLink:
+                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/weather-compressed.jpg",
+                    description:
+                        "JavaScript application that uses the OpenWeather API to pull weather data and Pexels API to pull a stock image relating to the weather summary provided."
                 }
             ]
         };

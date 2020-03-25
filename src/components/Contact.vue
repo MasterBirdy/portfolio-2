@@ -3,10 +3,10 @@
         <h2>Contact Me</h2>
         <p class="text">
             Feel free to either send me an e-mail at
-            <a href="mailto:hello@mattito.dev">hello@mattito.dev</a> or to send
-            a message with the form below! Thanks for coming by! 👋
+            <a href="mailto:hello@mattito.dev">hello@mattito.dev</a> if you are
+            interested in making something together. Thanks for coming by! 👋
         </p>
-        <form
+        <!-- <form
             name="contact"
             method="post"
             data-netlify="true"
@@ -20,7 +20,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" />
             <button type="submit" value="Submit">Submit</button>
-        </form>
+        </form> -->
     </div>
 </template>
 <script>

@@ -1,11 +1,13 @@
 <template>
     <div class="item">
-        <div
+        <a
             class="background-picture"
+            :href="imageLink"
+            target="_blank"
             :style="{
                 backgroundImage: 'url(' + require(`@/assets/${image}`) + ')'
             }"
-        ></div>
+        ></a>
         <h3>{{ name }}</h3>
         <div class="info">
             <p class="subtitle">{{ subtitle }}</p>
@@ -14,8 +16,10 @@
                 {{ description }}
             </p>
             <div class="links">
-                <a :href="demoLink" target="_blank">Demo</a>
-                <a :href="githubLink" class="source" target="_blank">GitHub</a>
+                <a class="link" :href="demoLink" target="_blank">Demo</a>
+                <a class="link source" :href="githubLink" target="_blank"
+                    >GitHub</a
+                >
             </div>
         </div>
     </div>
@@ -28,6 +32,7 @@ export default {
         icons: Array,
         image: String,
         demoLink: String,
+        imageLink: String,
         githubLink: String,
         description: String
     }
@@ -51,7 +56,7 @@ h3 {
     margin-top: 0.45rem;
 }
 
-a {
+.link {
     position: relative;
     color: rgba(83, 83, 83, 0.808);
     text-decoration: none;
@@ -60,13 +65,13 @@ a {
     text-transform: lowercase;
 }
 
-a:hover,
-a:active {
+.link:hover,
+.link:active {
     color: rgba(83, 83, 83, 0.596);
 }
 
-a::after,
-a:active::after {
+.link::after,
+.link:active::after {
     position: absolute;
     content: "";
     bottom: -4px;
@@ -79,7 +84,7 @@ a:active::after {
     transition: all 0.875s ease-in-out;
 }
 
-a:hover::after {
+.link:hover::after {
     width: 0%;
 }
 
@@ -87,7 +92,7 @@ a:hover::after {
     margin-top: 0.5rem;
 }
 
-a.source::after {
+.link.source::after {
     border-color: rgba(249, 149, 56, 0.623);
 }
 
@@ -104,6 +109,7 @@ a.source::after {
 }
 
 .background-picture {
+    display: block;
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
