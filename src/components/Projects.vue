@@ -29,6 +29,23 @@ export default {
         return {
             projects: [
                 {
+                    name: "Pokedex",
+                    subtitle: "Pokemon App",
+                    icons: [
+                        "devicon-html5-plain",
+                        "devicon-css3-plain",
+                        "devicon-javascript-plain",
+                        "devicon-react-original-wordmark"
+                    ],
+                    image: "pokedex-resized.png",
+                    demoLink: "https://fervent-leavitt-5ba39c.netlify.app",
+                    githubLink: "https://github.com/MasterBirdy/pokedex",
+                    imageLink:
+                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/pokedex-compressor.png",
+                    description:
+                        "A React App utilizing React Hooks, Material UI, and PokeAPI to pull up information Pokemon type, moves, stats, and description. It also displays a type effectiveness chart."
+                },
+                {
                     name: "KaoBook",
                     subtitle: "Social Media App",
                     icons: [
@@ -43,7 +60,7 @@ export default {
                     imageLink:
                         "https://images-masterbirdy.s3-us-west-1.amazonaws.com/kaobook-compressed.jpg",
                     description:
-                        "A full stack web application with social login and timelines to let you write posts and comments on your friends' pages."
+                        "A full stack web application using Vue, Vuetify, and JWT authentication that lets you write posts and comments on your friends' pages and timelines."
                 },
                 {
                     name: "Cat Blog",
@@ -77,7 +94,7 @@ export default {
                     imageLink:
                         "https://images-masterbirdy.s3-us-west-1.amazonaws.com/rest-countries-compressed.png",
                     description:
-                        "Front end challenge by Frontend Mentor to replicate UI design specifications and make a country data viewer using a REST API."
+                        "A Vue application using the REST Countries API to complete a front end challenge by Frontend Mentor, replicating UI design specifications to make a country data viewer."
                 },
                 {
                     name: "Weather App",
