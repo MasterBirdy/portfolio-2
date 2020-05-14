@@ -43,7 +43,7 @@ export default {
                     imageLink:
                         "https://images-masterbirdy.s3-us-west-1.amazonaws.com/pokedex-compressor.png",
                     description:
-                        "A React App utilizing React Hooks, Material UI, and PokeAPI to pull up information Pokemon type, moves, stats, and description. It also displays a type effectiveness chart."
+                        "A React App utilizing React Hooks, Material UI, and PokeAPI to pull up information including Pokemon moves, stats, and description. It also displays a type effectiveness chart."
                 },
                 {
                     name: "KaoBook",
