@@ -17,7 +17,11 @@
             </p>
             <div class="links">
                 <a class="link" :href="demoLink" target="_blank">Demo</a>
-                <a class="link source" :href="githubLink" target="_blank"
+                <a
+                    v-if="githubLink !== null"
+                    class="link source"
+                    :href="githubLink"
+                    target="_blank"
                     >GitHub</a
                 >
             </div>
@@ -33,8 +37,8 @@ export default {
         image: String,
         demoLink: String,
         imageLink: String,
-        githubLink: String,
-        description: String
+        description: String,
+        githubLink: String
     }
 };
 </script>

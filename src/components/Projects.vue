@@ -13,6 +13,7 @@
                 :githubLink="project.githubLink"
                 :description="project.description"
                 :imageLink="project.imageLink"
+                :hasGithub="project.githubLink !== null"
             ></ProjectItem>
         </div>
         <div class="button-grid">
@@ -29,6 +30,23 @@ export default {
         return {
             projects: [
                 {
+                    name: "Moving Mindz",
+                    subtitle: "Educational Python App",
+                    icons: [
+                        "devicon-react-original-wordmark",
+                        "devicon-nodejs-plain-wordmark colored",
+                        "devicon-sass-original colored",
+                        "devicon-mysql-plain colored"
+                    ],
+                    image: "movingminds.png",
+                    demoLink: "https://www.movingmindz.xyz",
+                    githubLink: null,
+                    imageLink:
+                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/movingminds.png",
+                    description:
+                        "A full stack web application created with React and Hapi designed for students to learn Python through lessons using the Turtle library with a STEM-focused curriculum."
+                },
+                {
                     name: "Pokedex",
                     subtitle: "Pokemon App",
                     icons: [
@@ -44,23 +62,6 @@ export default {
                         "https://images-masterbirdy.s3-us-west-1.amazonaws.com/pokedex-compressor.png",
                     description:
                         "A React App utilizing React Hooks, Material UI, and PokeAPI to pull up information including Pokemon moves, stats, and description. It also displays a type effectiveness chart."
-                },
-                {
-                    name: "KaoBook",
-                    subtitle: "Social Media App",
-                    icons: [
-                        "devicon-nodejs-plain",
-                        "devicon-express-original-wordmark",
-                        "devicon-mongodb-plain-wordmark",
-                        "devicon-vuejs-plain"
-                    ],
-                    image: "kaobook-resized.jpg",
-                    demoLink: "http://www.kaobook.club",
-                    githubLink: "https://github.com/MasterBirdy/kaobook-server",
-                    imageLink:
-                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/kaobook-compressed.jpg",
-                    description:
-                        "A full stack web application using Vue, Vuetify, and JWT authentication that lets you write posts and comments on your friends' pages and timelines."
                 },
                 {
                     name: "Cat Blog",
