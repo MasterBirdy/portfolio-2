@@ -47,6 +47,24 @@ export default {
                         "A full stack web application created with React and Hapi designed for students to learn Python through lessons using the Turtle library with a STEM-focused curriculum."
                 },
                 {
+                    name: "VRMS",
+                    subtitle: "Volunteer Relationship Management System",
+                    icons: [
+                        "devicon-react-original-wordmark",
+                        "devicon-nodejs-plain-wordmark colored",
+                        "devicon-express-original-wordmark colored",
+                        "devicon-mongodb-plain-wordmark colored"
+                    ],
+
+                    image: "vrms-resized.jpg",
+                    demoLink: "https://www.vrms.io/",
+                    githubLink: "https://github.com/hackforla/VRMS",
+                    imageLink:
+                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/vrms.jpg",
+                    description:
+                        "An open-source React project from Hack for LA that will be used by the organization to engage, support, and retain a network of volunteers for future open-source projects."
+                },
+                {
                     name: "Pokedex",
                     subtitle: "Pokemon App",
                     icons: [
@@ -96,22 +114,6 @@ export default {
                         "https://images-masterbirdy.s3-us-west-1.amazonaws.com/rest-countries-compressed.png",
                     description:
                         "A Vue application using the REST Countries API to complete a front end challenge by Frontend Mentor, replicating UI design specifications to make a country data viewer."
-                },
-                {
-                    name: "Weather App",
-                    subtitle: "Weather API App",
-                    icons: [
-                        "devicon-html5-plain",
-                        "devicon-css3-plain",
-                        "devicon-javascript-plain"
-                    ],
-                    image: "weather-resized.jpg",
-                    demoLink: "https://peaceful-saha-d013fd.netlify.com/",
-                    githubLink: "https://github.com/MasterBirdy/weatherapp",
-                    imageLink:
-                        "https://images-masterbirdy.s3-us-west-1.amazonaws.com/weather-compressed.jpg",
-                    description:
-                        "JavaScript application that uses the OpenWeather API to pull weather data and Pexels API to pull a stock image relating to the weather summary provided."
                 }
             ]
         };
